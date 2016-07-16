@@ -1,8 +1,103 @@
+/*
+这一行是为了什么？
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: #e8e8e8;
+    height: 100%;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #ff0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+
+.nav {
+    top: 0;
+    height: 70px;
+    background-color: green;
+}
+
+.logo {
+    float: left;
+}
+
+.modules {
+    /*float:left;*/
+}
+
+.modules li {
+    width: 120px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    line-height: 70px;
+}
+
+.wrap {
+    margin-top: 10px;
+    height: 100%;
+    margin-bottom: -70px;
+}
+
+.main-left {
+    background: green;
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+.main-right {
+    height: 100%;
+    width: 150px;
+    background: red;
+    float: right;
+}
+
+#main {
+    width: 900px;
+    height: 400px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer {
+    clear: both;
+    height: 70px;
+    margin-top: 10px;
+    background-color: gray;
+}
+
+.footer h2 {
+    line-height: 70px;
+    text-align: center;
+    font-size: 12px;
 }

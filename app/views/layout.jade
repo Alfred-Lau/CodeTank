@@ -1,8 +1,26 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
 
-  body
-    block content
+	body
+		div.nav
+			div.logo
+				img(src="http://img.mukewang.com/53edadad0001efe202000070.jpg")
+			div.modules
+				ul
+					li 
+						a(href="/") 首页
+					li 
+						a(href="/chart-anylysis") 图形分析
+					li 
+						a(href="/data-index") 数据指标
+					li 
+						a(href="/help-center") 帮助中心
+					li 
+						a(href="/about-me") 关于我
+		div.wrap
+			block content
+		footer.footer
+			h2 Copyright 2016 PingJu.com.
