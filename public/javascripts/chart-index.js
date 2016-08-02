@@ -1,6 +1,7 @@
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('main'));
 
+//Ajax获取数据，填充至options
 // 指定图表的配置项和数据
 var option = {
     tooltip: {},
