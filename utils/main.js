@@ -47,6 +47,8 @@ function getContents(id) {
                 others: others
             };
             console.log(util.inspect(source));
+            // 存入Mysql数据库
+
         } else {
             console.log(err);
         }
