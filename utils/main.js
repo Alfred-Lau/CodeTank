@@ -3,6 +3,14 @@ const request = require('request');
 const url = require('url');
 const util = require('util');
 
+import mysql from 'mysql';
+import options from '../config/config';
+
+const option = options.mysql;
+
+
+let pool = mysql.createPool(option);
+
 const webPrefix = 'http://bj.lianjia.com/zufang/';
 
 // 1.抓取首页，判断多少套房，进而判断多少页，作为循环参数
@@ -46,9 +54,24 @@ function getContents(id) {
                 special: special,
                 others: others
             };
-            console.log(util.inspect(source));
+            // console.log(util.inspect(source));
             // 存入Mysql数据库
-
+            pool.getConnection((err, connection) => {
+                if (err) {
+                    throw err;
+                }
+                connection.query('insert into housedata set ?', source, (err, rows, field) => {
+                    if (err) throw err;
+                    connection.query('select * from housedata limit 10', (err, results) => {
+                        if (err) {
+                            console.log('查询失败');
+                        } else {
+                            console.log(util.inspect(results));
+                        }
+                    })
+                    connection.release();
+                })
+            })
         } else {
             console.log(err);
         }
@@ -58,7 +81,7 @@ function getContents(id) {
 function cb(listUrl) {
     request(listUrl, (err, res, body) => {
         if (!err && res.statusCode == 200) {
-            $ = cio.load(body);
+            let $ = cio.load(body);
             $("ul#house-lst li").each((index, elem) => {
                 //和jquery转换为dom的语法完全一致
                 var id = $(elem).attr('data-id');
@@ -76,7 +99,7 @@ function getUrlAsyn(listUrl) {
 
 request.get(webPrefix, (err, res, body) => {
     if (!err && res.statusCode == 200) {
-        $ = cio.load(body);
+        let $ = cio.load(body);
         // 判断多少页
         var pageNumString = $('div.page-box.house-lst-page-box').attr('page-data');
         var pageNum = parseInt(JSON.parse(pageNumString).totalPage, 10);

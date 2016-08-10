@@ -5,7 +5,7 @@ var chartanalysis = require('../app/controllers/chartanalysis');
 
 /* GET home page. */
 router.get('/', index.index);
-
 router.get('/chart-anylysis', chartanalysis.index);
+router.get('/data', chartanalysis.data);
 
 module.exports = router;
