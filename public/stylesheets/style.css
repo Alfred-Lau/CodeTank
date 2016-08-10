@@ -68,25 +68,55 @@ a:active {
 }
 
 .main-left {
-    background: green;
+    /*background: green;*/
     width: 200px;
-    height: 100%;
+    height: 1200px;
     float: left;
 }
 
 .main-right {
-    height: 100%;
+    height: 1200px;
     width: 150px;
-    background: red;
+    /*background: red;*/
     float: right;
 }
 
 #main {
     width: 900px;
-    height: 400px;
+    /*height: 100%;*/
     float: left;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#line {
+    width: 900px;
+    height: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 10px 10px #558ABB;
+}
+
+#bar {
+    width: 900px;
+    height: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 10px 10px #558ABB;
+}
+
+#pie {
+    width: 900px;
+    height: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 10px 10px #558ABB;
 }
 
 .footer {

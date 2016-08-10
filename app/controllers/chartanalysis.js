@@ -13,9 +13,12 @@ exports.data = function(req, res, next) {
         if (err) {
             throw err;
         }
-        connection.query('select region, rent from housedata limit 10', (err, results) => {
+        connection.query('select region, rent, area from housedata limit 50', (err, results) => {
             if (err)
                 throw err;
+            for(let single of results){
+                ;
+            }
             res.json(JSON.stringify(results));
         })
         connection.release();
