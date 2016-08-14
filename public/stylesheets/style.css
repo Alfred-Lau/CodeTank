@@ -1,190 +1,3 @@
-.rect-wrap {
-    position: relative;
-    perspective: 1600px;
-}
-
-.container-animate {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-
-    transform-style: preserve-3d;
-    animation: rotate-frame 30s linear infinite;
-    transform-origin: 50% 50% 50px;
-/ / 设置3d空间的原点在平面中心再向Z轴移动200px的位置
-}
-
-.slide {
-    /*width: 400px;*/
-    /*height: 400px;*/
-    position: absolute;
-/ / 定位
-}
-
-.top {
-    width: 100px;
-    height: 100px;
-    left: 50px;
-    top: -50px;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    background: url("../images/top.jpg") center no-repeat;
-}
-
-.top img {
-    width: 100%;
-    height: 100%;
-}
-
-.bottom {
-    width: 100px;
-    height: 100px;
-    left: 50px;
-    bottom: -50px;
-    transform: rotateX(90deg);
-    transform-origin: top;
-    background: url("../images/bottom.jpg") center no-repeat;
-
-}
-
-.bottom img {
-    width: 100%;
-    height: 100%;
-}
-
-.left {
-    width: 100px;
-    height: 100px;
-    left: -50px;
-    top: 50px;
-    transform: rotateY(90deg);
-    transform-origin: right;
-    /*background: url("../images/left.jpg") no-repeat;*/
-
-}
-
-.left img {
-    width: 100%;
-    height: 100%;
-
-}
-
-.right {
-    width: 100px;
-    height: 100px;
-    left: 150px;
-    top: 50px;
-    transform: rotateY(-90deg);
-    transform-origin: left;
-    /*background: url("../images/right.jpg") center no-repeat;*/
-
-}
-
-.right img {
-    width: 100%;
-    height: 100%;
-}
-
-.front {
-    width: 100px;
-    height: 100px;
-    left: 50px;
-    top: 50px;
-    transform: translateZ(100px);
-    background: url("../images/front.jpg") center no-repeat;
-
-/ / 立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离
-}
-
-.front img {
-    width: 100%;
-    height: 100%;
-}
-
-.back {
-    width: 100px;
-    height: 100px;
-    left: 50px;
-    top: 50px;
-    transform: translateZ(0);
-    background: url("../images/back.jpg") center no-repeat;
-
-/ / 立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离
-}
-
-.back img {
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes rotate-frame {
-    0% {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-    10% {
-        transform: rotateX(0deg) rotateY(180deg);
-    }
-    20% {
-        transform: rotateX(-180deg) rotateY(180deg);
-    }
-    30% {
-        transform: rotateX(-360deg) rotateY(180deg);
-    }
-    40% {
-        transform: rotateX(-360deg) rotateY(360deg);
-    }
-    50% {
-        transform: rotateX(-180deg) rotateY(360deg);
-    }
-    60% {
-        transform: rotateX(90deg) rotateY(180deg);
-    }
-    70% {
-        transform: rotateX(0) rotateY(180deg);
-    }
-    80% {
-        transform: rotateX(90deg) rotateY(90deg);
-    }
-    90% {
-        transform: rotateX(90deg) rotateY(0);
-    }
-    100% {
-        transform: rotateX(0) rotateY(0);
-    }
-}
-
-#line {
-    /*width: 100%;*/
-    height: 400px;
-    margin-bottom: 10px;
-    border: 1px solid #f4f4f4;
-    padding: 10px;
-    border-radius: 10px;
-    text-shadow: 10px 10px #558ABB;
-}
-
-#bar {
-    /*width: 900px;*/
-    height: 400px;
-    margin-bottom: 10px;
-    border: 1px solid #f4f4f4;
-    padding: 10px;
-    border-radius: 10px;
-    text-shadow: 10px 10px #558ABB;
-}
-
-#pie {
-    /*width: 900px;*/
-    height: 400px;
-    margin-bottom: 10px;
-    border: 1px solid #f4f4f4;
-    padding: 10px;
-    border-radius: 10px;
-    text-shadow: 10px 10px #558ABB;
-}
-
-/*我的样式*/
-
 /*页面样式*/
 
 /*===========
@@ -557,6 +370,7 @@ header .main ul li a:active {
 
 .container {
     width: 100%;
+    min-height:600px;
 }
 
 /*交易信息*/
@@ -1037,4 +851,234 @@ footer p {
 
 .chart-analysis-main {
     -webkit-box-flex: 1;
+}
+
+
+#line {
+    /*width: 100%;*/
+    height: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 10px 10px #558ABB;
+}
+
+#bar {
+    /*width: 900px;*/
+    height: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 10px 10px #558ABB;
+}
+
+#pie {
+    /*width: 900px;*/
+    height: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 10px 10px #558ABB;
+}
+
+
+
+
+
+
+
+/*css3h5 */
+
+.css3h5{
+    width:100%;
+    /*display: -webkit-box;*/
+
+}
+
+.css3h5 > section{
+    /*-webkit-box-flex: 1;*/
+    float: left;
+    width: calc(50% - 40px);
+    margin:20px;
+}
+
+.css3h5-rect-wrap {
+    position: relative;
+    perspective: 1600px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px red, -1em 0 0.4em olive;
+    -moz-box-shadow: 3px 3px red, -1em 0 0.4em olive;
+    box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}
+
+.css3h5-container-animate {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+
+    transform-style: preserve-3d;
+    animation: rotate-frame 30s linear infinite;
+    transform-origin: 50% 50% 50px;
+/ / 设置3d空间的原点在平面中心再向Z轴移动200px的位置
+}
+
+.css3h5-slide {
+    /*width: 400px;*/
+    /*height: 400px;*/
+    position: absolute;
+/ / 定位
+}
+
+.css3h5-top {
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: -50px;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    background: url("../images/top.jpg") center no-repeat;
+}
+
+.css3h5-top img {
+    width: 100%;
+    height: 100%;
+}
+
+.css3h5-bottom {
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    bottom: -50px;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    background: url("../images/bottom.jpg") center no-repeat;
+
+}
+
+.css3h5-bottom img {
+    width: 100%;
+    height: 100%;
+}
+
+.css3h5-left {
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    top: 50px;
+    transform: rotateY(90deg);
+    transform-origin: right;
+    /*background: url("../images/left.jpg") no-repeat;*/
+
+}
+
+.css3h5-left img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.css3h5-right {
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    top: 50px;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    /*background: url("../images/right.jpg") center no-repeat;*/
+
+}
+
+.css3h5-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.css3h5-front {
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+    transform: translateZ(100px);
+    background: url("../images/front.jpg") center no-repeat;
+
+/ / 立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离
+}
+
+.css3h5-front img {
+    width: 100%;
+    height: 100%;
+}
+
+.css3h5-back {
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+    transform: translateZ(0);
+    background: url("../images/back.jpg") center no-repeat;
+
+/ / 立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离
+}
+
+.css3h5-back img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes rotate-frame {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    10% {
+        transform: rotateX(0deg) rotateY(180deg);
+    }
+    20% {
+        transform: rotateX(-180deg) rotateY(180deg);
+    }
+    30% {
+        transform: rotateX(-360deg) rotateY(180deg);
+    }
+    40% {
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+    50% {
+        transform: rotateX(-180deg) rotateY(360deg);
+    }
+    60% {
+        transform: rotateX(90deg) rotateY(180deg);
+    }
+    70% {
+        transform: rotateX(0) rotateY(180deg);
+    }
+    80% {
+        transform: rotateX(90deg) rotateY(90deg);
+    }
+    90% {
+        transform: rotateX(90deg) rotateY(0);
+    }
+    100% {
+        transform: rotateX(0) rotateY(0);
+    }
+}
+
+.css3h5-rect-wrap .css3h5-container-animate{
+    border:2px solid #77d04b;
+}
+.css3h5-rect-wrap .css3h5-info{
+    width:80%;
+    margin:0 auto;
+    padding-bottom:20px;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.css3h5-feature2{
+    height:400px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px red, -1em 0 0.4em olive;
+    -moz-box-shadow: 3px 3px red, -1em 0 0.4em olive;
+    box-shadow: 3px 3px red, -1em 0 0.4em olive;
 }
