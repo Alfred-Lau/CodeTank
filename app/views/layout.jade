@@ -3,24 +3,50 @@ html
 	head
 		title= title
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/normalize.css')
+		link(rel='stylesheet', href='/vendor/owlcarousel/assets/owl.carousel.min.css')
+		link(rel='stylesheet', href='/vendor/owlcarousel/assets/owl.theme.default.min.css')
 		link(rel="icon", type="image/x-icon", href="/favicon.ico")
 	body
-		div.nav
-			div.logo
-				img(src="http://img.mukewang.com/53edadad0001efe202000070.jpg")
-			div.modules
+		header
+			// 包含顶部导航和主导航
+			nav.topnav
 				ul
-					li 
+					li
+						a(href="#") 登录
+					li
+						a(href="#") 注册
+			nav.main
+				a(href="#" class="brand")
+					img(src="../images/logo.jpg")
+					span CodeTank
+				ul
+					li
 						a(href="/") 首页
-					li 
+					li
 						a(href="/chart-anylysis") 图形分析
-					li 
+					li
 						a(href="/data-index") 数据指标
-					li 
+					li
 						a(href="/help-center") 帮助中心
-					li 
+					li
 						a(href="/about-me") 关于我
-		div.wrap
+		div.container
 			block content
-		footer.footer
-			h2 Copyright 2016 PingJu.com.
+		footer
+			ul
+				li
+					span.icon.icon-zfywxk 支付业务许可
+				li
+					span.icon.icon-pcirk PCI认证
+				li
+					span.icon.icon-visayz VISA认证
+				li
+					span.icon.icon-vsjmfw VERSIGN加密服务
+				li
+					span.icon.icon-wlgs 网络工商
+				li
+					span.icon.icon-rzcx 电子商务协会认证诚信网
+				li
+					span.icon.icon-gs 北京工商
+				p CodeTank ®版权所有 2016-2016

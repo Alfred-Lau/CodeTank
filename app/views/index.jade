@@ -2,16 +2,151 @@ extends layout
 
 block content
 	section.header
-		div.header-wraper
-			div.title-wrap
-				p 快捷找房，不再迟疑
-			div.house-wrap
-			div.search-wrap
-	section
-	section
-	section
-	section
+	//section
+	//	div.rect-wrap
+	//		div.container-animate
+	//			div.slide.top
+	//				img(src="../images/top.jpg")
+	//			div.slide.bottom
+	//				img(src="../images/bottom.jpg")
+	//			div.slide.left
+	//				img(src="../images/left.jpg")
+	//			div.slide.right
+	//				img(src="../images/right.jpg")
+	//			div.slide.front
+	//				img(src="../images/front.jpg")
+	//			div.slide.back
+	//				img(src="../images/back.jpg")
+	section.ad.clearfix
+		div.owl-carousel.owl-theme
+			div.item
+				picture
+					source(srcset="../images/ad001-l.png" media="(min-width:50em)")
+					source(srcset="../images/ad001-m.png" media="(min-width:30em)")
+					img(src="../images/ad001.png")
+			div.item
+				picture
+					source(srcset="../images/ad002-l.png" media="(min-width:50em)")
+					source(srcset="../images/ad002-m.png" media="(min-width:30em)")
+					img(src="../images/ad002.png")
+			div.item
+				picture
+					source(srcset="../images/ad003-l.png" media="(min-width:50em)")
+					source(srcset="../images/ad003-m.png" media="(min-width:30em)")
+					img(src="../images/ad003.png")
+	section.feature
+		div.item
+			h3
+			p
+				br
+				br
+		div.item
+			h3
+			p
+				br
+				br
+		div.item
+			h3
+			p
+				br
+				br
+	section.notice.clearfix
+		a(href="#")
+			span 2016-08-12
+			2016-08-12   完成了首页的搭建和导航的实现
+		a.more(href="#") 更多待更新功能
+	section.product.clearfix
+		h2 规定期限产品
+			em 省事省力
+			em 坐等收益
+		div.product-content
+			div.item.clearfix
+				h3
+					em 3
+					个月
+				div.info
+					p 约定年化收益:
+						span 3.5%
+							i 起
+					p 总成交金额:
+						span 1880
+							i 万元
+				div.buy
+					a(href="#") 购买
+			div.item.clearfix
+				h3
+					em 3
+					个月
+				div.info
+					p 约定年化收益:
+						span 3.5%
+							i 起
+					p 总成交金额:
+						span 1880
+							i 万元
+				div.buy
+					a(href="#") 购买
+			div.item.clearfix
+				h3
+					em 3
+					个月
+				div.info
+					p 约定年化收益:
+						span 3.5%
+							i 起
+					p 总成交金额:
+						span 1880
+							i 万元
+				div.buy
+					a(href="#") 购买
+			div.item.clearfix
+				h3
+					em 3
+					个月
+				div.info
+					p 约定年化收益:
+						span 3.5%
+							i 起
+					p 总成交金额:
+						span 1880
+							i 万元
+				div.buy
+					a(href="#") 购买
+			div.item.clearfix
+				h3
+					em 3
+					个月
+				div.info
+					p 约定年化收益:
+						span 3.5%
+							i 起
+					p 总成交金额:
+						span 1880
+							i 万元
+				div.buy
+					a(href="#") 购买
+	section.footer
+		div.footer-content.clearfix
+			p.brand
+			ul
+				li.title 关于我
+				li
+					a(href="#") Github
+			ul
+				li.title 维护项目
+				li
+					a(href="#") n-novel
+			ul
+				li.title 正在学习
+				li
+					a(href="#") Node.js
+			ul
+				li.title 意见反馈
+				li
+					a(href="#") 意见反馈
 	script(src="/javascripts/jquery-3.1.0.js")
+	script(src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous")
+	script(src="/vendor/owlcarousel/owl.carousel.min.js")
 	script(src="/javascripts/index.js")
 
 

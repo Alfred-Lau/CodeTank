@@ -1,3 +1,5 @@
+"use strict";
+
 $(function () {
     $(".owl-carousel").owlCarousel({
         items: 1,
@@ -7,4 +9,6 @@ $(function () {
         autoplayHoverPause: true
 
     });
-})
+});
+
+//# sourceMappingURL=index-compiled.js.map
