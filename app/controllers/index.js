@@ -1,3 +1,3 @@
 exports.index = function(req, res, next) {
-    res.render('index', { title: '萍聚' });
+    res.render('index', { title: 'Codegit Tank' });
 }

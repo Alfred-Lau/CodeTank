@@ -5,7 +5,7 @@
 
 .container-animate {
     width: 200px;
-    height:200px;
+    height: 200px;
     margin: 0 auto;
 
     transform-style: preserve-3d;
@@ -22,8 +22,8 @@
 }
 
 .top {
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
     left: 50px;
     top: -50px;
     transform: rotateX(-90deg);
@@ -31,14 +31,14 @@
     background: url("../images/top.jpg") center no-repeat;
 }
 
-.top img{
-    width:100%;
-    height:100%;
+.top img {
+    width: 100%;
+    height: 100%;
 }
 
 .bottom {
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
     left: 50px;
     bottom: -50px;
     transform: rotateX(90deg);
@@ -47,15 +47,14 @@
 
 }
 
-.bottom img{
-    width:100%;
-    height:100%;
+.bottom img {
+    width: 100%;
+    height: 100%;
 }
 
-
 .left {
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
     left: -50px;
     top: 50px;
     transform: rotateY(90deg);
@@ -64,15 +63,15 @@
 
 }
 
-.left img{
-    width:100%;
-    height:100%;
+.left img {
+    width: 100%;
+    height: 100%;
 
 }
 
 .right {
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
     left: 150px;
     top: 50px;
     transform: rotateY(-90deg);
@@ -81,14 +80,14 @@
 
 }
 
-.right img{
-    width:100%;
-    height:100%;
+.right img {
+    width: 100%;
+    height: 100%;
 }
 
 .front {
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
     left: 50px;
     top: 50px;
     transform: translateZ(100px);
@@ -97,14 +96,14 @@
 / / 立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离
 }
 
-.front img{
-    width:100%;
-    height:100%;
+.front img {
+    width: 100%;
+    height: 100%;
 }
 
 .back {
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
     left: 50px;
     top: 50px;
     transform: translateZ(0);
@@ -113,9 +112,9 @@
 / / 立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离
 }
 
-.back img{
-    width:100%;
-    height:100%;
+.back img {
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes rotate-frame {
@@ -155,7 +154,7 @@
 }
 
 #line {
-    width: 900px;
+    /*width: 100%;*/
     height: 400px;
     margin-bottom: 10px;
     border: 1px solid #f4f4f4;
@@ -165,7 +164,7 @@
 }
 
 #bar {
-    width: 900px;
+    /*width: 900px;*/
     height: 400px;
     margin-bottom: 10px;
     border: 1px solid #f4f4f4;
@@ -175,7 +174,7 @@
 }
 
 #pie {
-    width: 900px;
+    /*width: 900px;*/
     height: 400px;
     margin-bottom: 10px;
     border: 1px solid #f4f4f4;
@@ -184,18 +183,9 @@
     text-shadow: 10px 10px #558ABB;
 }
 
-
-
-
-
-
-
-
 /*我的样式*/
 
-
 /*页面样式*/
-
 
 /*===========
 *   基本默认值
@@ -205,7 +195,6 @@ html {
     font-size: 62.5%;
     color: #222;
 }
-
 
 /*设置选中文字之后的显示效果*/
 
@@ -224,11 +213,9 @@ li {
     list-style: none;
 }
 
-
 /*===========
 *   工具样式：常用样式的缩写
 =============*/
-
 
 /*父元素居中*/
 
@@ -237,7 +224,6 @@ li {
     margin-right: auto;
     margin-left: auto;
 }
-
 
 /*!important 增强优先级！*/
 
@@ -261,7 +247,6 @@ li {
     text-align: center !important;
 }
 
-
 /*挤占元素空间*/
 
 .hide {
@@ -271,7 +256,6 @@ li {
 .show {
     display: block !important;
 }
-
 
 /*不会挤占元素空间*/
 
@@ -287,9 +271,7 @@ li {
     border: 0;
 }
 
-
 /*float会带来父元素高度塌陷的问题，所以需要清除浮动。清除浮动:flex可以替代float*/
-
 
 /*=============================
 清除浮动的第一种方法：在父元素后面放一个clear:both的div；
@@ -342,7 +324,6 @@ display:table-caption;
     clear: both;
 }
 
-
 /*===========
 *   浏览器更新提示
 =============*/
@@ -352,7 +333,6 @@ display:table-caption;
     padding: 1rem;
     background: #ccc;
 }
-
 
 /*===========
 *   自定义页面样式
@@ -375,13 +355,11 @@ a:active {
     text-decoration: underline;
 }
 
-
 /*网站头部*/
 
 header {
     width: 100%;
 }
-
 
 /*在中文版的chrome浏览器中，3rem并不等于30px，而是36px。因为中文最小字号下限为12px，英文版为10px*/
 
@@ -414,7 +392,6 @@ header .topnav ul li {
     display: inline-block;
 }
 
-
 /*li+li代表从第二个开始*/
 
 header .topnav ul li + li {
@@ -422,7 +399,6 @@ header .topnav ul li + li {
     /**/
     margin-left: -3px;
 }
-
 
 /**/
 
@@ -433,29 +409,24 @@ header .topnav ul li a {
     color: #fff;
 }
 
-
 /*确定这一块在不同分辨率之下发生了变化媒体查询，*/
-
 
 /*这里如果使用rem相对大小，则不是根据html的font-size=10px, 而是根据浏览器的默认字体大小16px*/
 
-
 /*同时复制这三块*/
-
 
 /*0-800*/
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
     header .top ul li a {
         padding: 0 1rem;
     }
 }
 
-
 /*481-800*/
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {}
-
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+}
 
 /*0-481*/
 
@@ -467,11 +438,9 @@ header .topnav ul li a {
     }
 }
 
-
 /*=====================================
 注意，样式都是一块块，一层层的写下去的，我也一定要遵循！！！，切记
 ======================================*/
-
 
 /*设置主导航的样式*/
 
@@ -483,15 +452,15 @@ header .main .brand {
     float: left;
     /*最后一个0很重要！*/
     padding: 1rem 1.5rem 0;
-    padding:0;
+    padding: 0;
 }
+
 header .main .brand img {
     height: 60px;
     float: left;
 }
 
-
-header .main .brand span{
+header .main .brand span {
     display: block;
     margin-left: 10px;
     line-height: 66px;
@@ -526,19 +495,15 @@ header .main ul li a:active {
     background-color: #f8f6f1;
 }
 
-
 /*确定这一块在不同分辨率之下发生了变化媒体查询，*/
-
 
 /*这里如果使用rem相对大小，则不是根据html的font-size=10px, 而是根据浏览器的默认字体大小16px*/
 
-
 /*同时复制这三块*/
-
 
 /*0-800*/
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
     header .main .brand {
         float: none;
         display: block;
@@ -546,15 +511,19 @@ header .main ul li a:active {
         margin: 1.5rem auto 0.5rem;
         text-align: center;
     }
+
     header .main ul {
         text-align: center;
     }
+
     header .main ul li {
         border: none;
     }
+
     header .main ul li a {
         padding: 0 1.5rem;
     }
+
     header .main ul li a:hover,
     header .main ul li a:active {
         color: #ffb300;
@@ -562,34 +531,33 @@ header .main ul li a:active {
     }
 }
 
-
 /*481-800*/
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
     header .main ul li {
         line-height: 3rem;
     }
+
     header .main ul li:first-child {
         display: none;
     }
+
     header .main ul li a {
         font-weight: normal;
         padding: 0 0.5rem;
     }
 }
 
-
 /*0-481*/
 
-@media only screen and (max-width: 480px) {}
-
+@media only screen and (max-width: 480px) {
+}
 
 /*网站主要内容*/
 
 .container {
     width: 100%;
 }
-
 
 /*交易信息*/
 
@@ -639,25 +607,23 @@ header .main ul li a:active {
     color: #fff;
 }
 
-
 /*确定这一块在不同分辨率之下发生了变化媒体查询，*/
-
 
 /*这里如果使用rem相对大小，则不是根据html的font-size=10px, 而是根据浏览器的默认字体大小16px*/
 
-
 /*同时复制这三块*/
-
 
 /*0-800*/
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
     .trana-data {
         padding: 1rem 0.5rem;
     }
+
     .trans-data span {
         font-size: 1.2rem;
     }
+
     .trans-data span .trans-money {
         font-size: 1.6rem;
         margin: 0;
@@ -666,16 +632,16 @@ header .main ul li a:active {
         box-shadow: none;
         background: transparent;
     }
+
     .trans-report a {
         font-size: 1.2rem;
     }
 }
 
-
 /*481-800*/
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {}
-
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+}
 
 /*0-481*/
 
@@ -683,24 +649,24 @@ header .main ul li a:active {
     .transaction {
         padding: 0.5rem 0;
     }
+
     .trans-data,
     .trans-report {
         float: none;
         text-align: center;
     }
+
     .trans-data,
     .trans-report a {
         padding: 0;
     }
 }
 
-
 /*滚动广告部分*/
 
 /*.ad {
     display: none;
 }*/
-
 
 /*平台特点*/
 
@@ -726,7 +692,6 @@ header .main ul li a:active {
     margin-left: 1.5rem;
 }
 
-
 /*标题*/
 
 .feature .item h3 {
@@ -740,7 +705,6 @@ header .main ul li a:active {
     color: #f90;
 }
 
-
 /*内容*/
 
 .feature .item p {
@@ -750,7 +714,6 @@ header .main ul li a:active {
     padding: 0;
     color: #999;
 }
-
 
 /*最新公告样式*/
 
@@ -778,7 +741,6 @@ header .main ul li a:active {
     white-space: nowrap;
 }
 
-
 /*通过css的样式的方式来添加内容（before，after）*/
 
 .notice a:first-child:before {
@@ -800,7 +762,6 @@ header .main ul li a:active {
     margin-right: 2rem;
     color: #f90;
 }
-
 
 /*产品列表*/
 
@@ -910,7 +871,6 @@ header .main ul li a:active {
     width: calc(22% - 4.4rem);
 }
 
-
 /*NB*/
 
 .product .product-content .item .buy a {
@@ -936,7 +896,6 @@ header .main ul li a:active {
     background-color: #ccc !important;
     cursor: not-allowed;
 }
-
 
 /*底部导航的实现*/
 
@@ -979,7 +938,6 @@ header .main ul li a:active {
     line-height: 3rem;
 }
 
-
 /*网站底部*/
 
 footer {
@@ -995,7 +953,6 @@ footer ul {
 footer ul li {
     display: inline-block;
 }
-
 
 /*css雪碧图的使用*/
 
@@ -1058,4 +1015,26 @@ footer ul li .icon-gs {
 footer p {
     text-align: center;
     color: #999;
+}
+
+/*chart-analysis*/
+
+.chart-analysis {
+    display: -webkit-box;
+    padding-top:10px;
+}
+
+.chart-analysis-main-left {
+    width: 200px;
+    background-color: orange;
+
+}
+
+.chart-analysis-main-right {
+    width: 200px;
+    background-color: red;
+}
+
+.chart-analysis-main {
+    -webkit-box-flex: 1;
 }
