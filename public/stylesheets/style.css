@@ -370,7 +370,7 @@ header .main ul li a:active {
 
 .container {
     width: 100%;
-    min-height:600px;
+    min-height: 600px;
 }
 
 /*交易信息*/
@@ -835,7 +835,7 @@ footer p {
 
 .chart-analysis {
     display: -webkit-box;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 .chart-analysis-main-left {
@@ -852,7 +852,6 @@ footer p {
 .chart-analysis-main {
     -webkit-box-flex: 1;
 }
-
 
 #line {
     /*width: 100%;*/
@@ -884,25 +883,19 @@ footer p {
     text-shadow: 10px 10px #558ABB;
 }
 
-
-
-
-
-
-
 /*css3h5 */
 
-.css3h5{
-    width:100%;
+.css3h5 {
+    width: 100%;
     /*display: -webkit-box;*/
 
 }
 
-.css3h5 > section{
+.css3h5 > section {
     /*-webkit-box-flex: 1;*/
     float: left;
     width: calc(50% - 40px);
-    margin:20px;
+    margin: 20px;
 }
 
 .css3h5-rect-wrap {
@@ -1064,21 +1057,90 @@ footer p {
     }
 }
 
-.css3h5-rect-wrap .css3h5-container-animate{
-    border:2px solid #77d04b;
+.css3h5-rect-wrap .css3h5-container-animate {
+    border: 2px solid #77d04b;
 }
-.css3h5-rect-wrap .css3h5-info{
-    width:80%;
-    margin:0 auto;
-    padding-bottom:20px;
+
+.css3h5-rect-wrap .css3h5-info {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
     font-size: 16px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.css3h5-feature2{
-    height:400px;
+.css3h5-feature2 {
+    /*display: table;*/
+    /*width: 300px;*/
+
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+
+    color: red;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px red, -1em 0 0.4em olive;
     -moz-box-shadow: 3px 3px red, -1em 0 0.4em olive;
     box-shadow: 3px 3px red, -1em 0 0.4em olive;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    display: -o-box;
+    -o-box-orient: horizontal;
+    -o-box-pack: center;
+    -o-box-align: center;
+
+    display: -ms-box;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -ms-box-align: center;
+
+    display: box;
+    box-orient: horizontal;
+    box-pack: center;
+    box-align: center;
+
+}
+
+.css3h5-feature2 .css3h5-box-shadow {
+    display: table-cell;
+    vertical-align: middle;
+    /*position: relative;*/
+    /*top:50%;*/
+    /*transform:translateY(-50%);*/
+
+    height: 250px;
+    width: 80%;
+
+    /*文字水平居中*/
+    text-align: center;
+
+    border: dashed 2px silver;
+    border-radius: 10px 10px 10px;
+
+    color: gray;
+}
+
+.css3h5-feature3, .css3h5-feature4, .css3h5-feature5, .css3h5-feature6, .css3h5-feature7, .css3h5-feature8, .css3h5-feature9, .css3h5-feature10, .css3h5-feature11 {
+    color: red;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px red, -1em 0 0.4em olive;
+    -moz-box-shadow: 3px 3px red, -1em 0 0.4em olive;
+    box-shadow: 3px 3px red, -1em 0 0.4em olive;
+
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
 }
