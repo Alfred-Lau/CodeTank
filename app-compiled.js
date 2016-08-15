@@ -8,7 +8,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var mongoose = require('mongoose');
-
+var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
 var dbUrl = 'mongodb://localhost/echart';
 
 mongoose.connect(dbUrl);
@@ -32,6 +33,14 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use(session({
+  secret: 'echart',
+  store: new MongoStore({
+    url: dbUrl,
+    collection: 'sessions'
+  })
+}));
 
 // 没出现在这里的静态文件都不能直接访问public
 app.use(express.static(path.join(__dirname, 'public')));
