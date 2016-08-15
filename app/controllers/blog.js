@@ -5,7 +5,7 @@
 
 module.exports = exports;
 
-exports.index = (req, res, next)=> {
+exports.index = (req, res, next)=>{
     res.render('blog', {contents: 'hello,blog'});
 
 

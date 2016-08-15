@@ -20,17 +20,38 @@ html
 				a(href="/" class="brand")
 					img(src="../images/logo.jpg")
 					span CodeTank
-				ul
+				ul.main-first
 					li
 						a(href="/") 首页
+						ul
+							li
+								a(href="*") 首页
 					li
 						a(href="/charts") Charts
+						ul
+							li
+								a(href="*") Line
+							li
+								a(href="*") Pie
+							li
+								a(href="*") Bar
 					li
 						a(href="/css3h5") CSS3&H5
+						ul
+							li
+								a(href="*") CSS3
+							li
+								a(href="*") H5
 					li
 						a(href="/blog") Blog
+						ul
+							li
+								a(href="*") 自己的
 					li
 						a(href="/aboutme") About Me
+						ul
+							li
+								a(href="*") 关于我
 		div.container
 			block content
 		footer

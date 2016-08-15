@@ -6,6 +6,9 @@ var css3h5 = require('../app/controllers/css3h5');
 var blog = require('../app/controllers/blog');
 var aboutme = require('../app/controllers/aboutme');
 
+
+//user
+
 /* GET home page. */
 router.get('/', index.index);
 router.get('/charts', chartanalysis.index);
@@ -18,7 +21,7 @@ router.get('/css3h5', css3h5.index);
 
 //blog page
 
-
+//blog-index
 router.get('/blog', blog.index);
 
 //aboutme page

@@ -269,7 +269,7 @@ header .main .brand {
 }
 
 header .main .brand img {
-    height: 60px;
+    height: 50px;
     float: left;
 }
 
@@ -282,17 +282,17 @@ header .main .brand span {
     float: left;
 }
 
-header .main ul {
+header .main .main-first {
     text-align: right;
 }
 
-header .main ul li {
+header .main .main-first li {
     /*见证奇迹，li垂直变水平的关键*/
     display: inline-block;
     border-left: 1px solid #f0ede9;
 }
 
-header .main ul li a {
+header .main .main-first li a {
     display: inline-block;
     padding: 0 3rem;
     line-height: 5.5rem;
@@ -302,10 +302,24 @@ header .main ul li a {
     text-decoration: none;
 }
 
-header .main ul li a:hover,
-header .main ul li a:active {
+header .main .main-first li a:hover,
+header .main .main-first li a:active {
     color: #ffb300;
     background-color: #f8f6f1;
+}
+
+
+header .main .main-first li ul{
+    display: none;
+    position: absolute;
+}
+
+header .main .main-first li ul li {
+    float: none;
+}
+
+header .main .main-first li:hover ul {
+    display: block;
 }
 
 /*确定这一块在不同分辨率之下发生了变化媒体查询，*/
@@ -1144,4 +1158,68 @@ footer p {
     padding: 10px;
     border: 1px solid #ccc;
     margin: 20px auto;
+}
+
+
+/*blog page*/
+
+
+.blog{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+}
+
+.blog-left{
+    width:200px;
+    display: inline-block;
+    border:1px solid gray;
+
+}
+
+.blog-left .blog-left-nav{
+
+}
+
+
+.blog-left .blog-left-nav ul{
+
+}
+.blog-left .blog-left-nav ul li{
+
+}
+
+.blog-left .blog-left-nav ul li a{
+
+}
+
+.blog-main{
+    /*注意inline-block和box-flex不能混用*/
+    /*display: inline-block;*/
+    border:1px solid gray;
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    box-flex: 4;
+
+
+}
+
+.blog-main .blog-article{
+
+}
+
+.blog-main .blog-article-title{
+
+}
+
+.blog-main .blog-article p{
+
+}
+
+.blog-right{
+    border: 1px solid gray;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+
 }

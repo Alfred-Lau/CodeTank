@@ -6,6 +6,15 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var fs = require('fs');
+var mongoose = require('mongoose');
+
+var dbUrl = 'mongodb://localhost/echart';
+
+mongoose.connect(dbUrl);
+
+//避免后期一个个加载,一次性加载完毕
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');

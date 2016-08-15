@@ -17,7 +17,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var pool = _mysql2.default.createPool(_config2.default.mysql);
 
 exports.index = function (req, res, next) {
-    res.render('chart-index', { title: '萍聚' });
+    res.render('chart-index', { title: 'Code Tank' });
 };
 
 exports.data = function (req, res, next) {
