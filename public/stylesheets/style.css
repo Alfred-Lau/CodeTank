@@ -302,8 +302,10 @@ header .main .main-first li a {
     text-decoration: none;
 }
 
-header .main .main-first li a:hover,
-header .main .main-first li a:active {
+header .main .main-first > li > a:hover,
+header .main .main-first > li > a:active {
+    border-bottom:2px solid #0b97c4;
+
     color: #ffb300;
     background-color: #f8f6f1;
 }
@@ -316,10 +318,17 @@ header .main .main-first li ul{
 
 header .main .main-first li ul li {
     float: none;
+    /*这句话很关键,结合上面一句制作下拉列表*/
+    display: list-item;
 }
 
 header .main .main-first li:hover ul {
+    background-color: #ececec;
     display: block;
+    /*如果为正数，则离用户更近，为负数则表示离用户更远*/
+    z-index: 1000;
+    width:120px;
+    text-align: center;
 }
 
 /*确定这一块在不同分辨率之下发生了变化媒体查询，*/
@@ -1146,7 +1155,7 @@ footer p {
     color: gray;
 }
 
-.css3h5-feature3, .css3h5-feature4, .css3h5-feature5, .css3h5-feature6, .css3h5-feature7, .css3h5-feature8, .css3h5-feature9, .css3h5-feature10, .css3h5-feature11 {
+.css3h5-feature3, .css3h5-feature4, .css3h5-feature5, .css3h5-feature6, .css3h5-feature7, .css3h5-feature8, .css3h5-feature9, .css3h5-feature10, .css3h5-feature11, .css3h5-feature12, .css3h5-feature13, .css3h5-feature14 {
     color: red;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px red, -1em 0 0.4em olive;
