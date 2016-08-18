@@ -6,16 +6,16 @@ html
 		link(rel='stylesheet', href='/stylesheets/normalize.css')
 		link(rel='stylesheet', href='/vendor/owlcarousel/assets/owl.carousel.min.css')
 		link(rel='stylesheet', href='/vendor/owlcarousel/assets/owl.theme.default.min.css')
-		link(rel="icon", type="image/x-icon", href="/favicon.ico")
+		script(src="/javascripts/main.js")
 	body
 		header
 			// 包含顶部导航和主导航
 			nav.topnav
 				ul
 					li
-						a(href="/signin") 登录
+						a(href="#0") 登录
 					li
-						a(href="/signup") 注册
+						a(href="#0") 注册
 			nav.main
 				a(href="/" class="brand")
 					img(src="../images/logo.jpg")
@@ -54,6 +54,18 @@ html
 								a(href="*") 关于我
 		div.container
 			block content
+		div.cd-user-modal
+			div.cd-user-modal-container
+				ul.cd-switcher
+					li
+						a(href="#0") 用户登录
+					li
+						a(href="#0") 新用户注册
+				div#cd-login
+					form.cd-form
+						p.fieldset
+							label.image-replace.cd-username(for="signin-username")
+							input.full-width.has-pedding.has-border#signin-username(type="text", placeholder="输入用户名")
 		footer
 			ul
 				li
