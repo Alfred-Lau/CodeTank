@@ -1,5 +1,6 @@
 /*页面样式*/
 
+
 /*===========
 *   基本默认值
 =============*/
@@ -8,6 +9,7 @@ html {
     font-size: 62.5%;
     color: #222;
 }
+
 
 /*设置选中文字之后的显示效果*/
 
@@ -26,9 +28,11 @@ li {
     list-style: none;
 }
 
+
 /*===========
 *   工具样式：常用样式的缩写
 =============*/
+
 
 /*父元素居中*/
 
@@ -37,6 +41,7 @@ li {
     margin-right: auto;
     margin-left: auto;
 }
+
 
 /*!important 增强优先级！*/
 
@@ -60,6 +65,7 @@ li {
     text-align: center !important;
 }
 
+
 /*挤占元素空间*/
 
 .hide {
@@ -69,6 +75,7 @@ li {
 .show {
     display: block !important;
 }
+
 
 /*不会挤占元素空间*/
 
@@ -84,7 +91,9 @@ li {
     border: 0;
 }
 
+
 /*float会带来父元素高度塌陷的问题，所以需要清除浮动。清除浮动:flex可以替代float*/
+
 
 /*=============================
 清除浮动的第一种方法：在父元素后面放一个clear:both的div；
@@ -137,6 +146,7 @@ display:table-caption;
     clear: both;
 }
 
+
 /*===========
 *   浏览器更新提示
 =============*/
@@ -146,6 +156,7 @@ display:table-caption;
     padding: 1rem;
     background: #ccc;
 }
+
 
 /*===========
 *   自定义页面样式
@@ -168,11 +179,13 @@ a:active {
     text-decoration: underline;
 }
 
+
 /*网站头部*/
 
 header {
     width: 100%;
 }
+
 
 /*在中文版的chrome浏览器中，3rem并不等于30px，而是36px。因为中文最小字号下限为12px，英文版为10px*/
 
@@ -205,6 +218,7 @@ header .topnav ul li {
     display: inline-block;
 }
 
+
 /*li+li代表从第二个开始*/
 
 header .topnav ul li + li {
@@ -212,6 +226,7 @@ header .topnav ul li + li {
     /**/
     margin-left: -3px;
 }
+
 
 /**/
 
@@ -222,11 +237,15 @@ header .topnav ul li a {
     color: #fff;
 }
 
+
 /*确定这一块在不同分辨率之下发生了变化媒体查询，*/
+
 
 /*这里如果使用rem相对大小，则不是根据html的font-size=10px, 而是根据浏览器的默认字体大小16px*/
 
+
 /*同时复制这三块*/
+
 
 /*0-800*/
 
@@ -236,10 +255,11 @@ header .topnav ul li a {
     }
 }
 
+
 /*481-800*/
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {
-}
+@media only screen and (min-width: 481px) and (max-width: 800px) {}
+
 
 /*0-481*/
 
@@ -251,9 +271,11 @@ header .topnav ul li a {
     }
 }
 
+
 /*=====================================
 注意，样式都是一块块，一层层的写下去的，我也一定要遵循！！！，切记
 ======================================*/
+
 
 /*设置主导航的样式*/
 
@@ -304,14 +326,12 @@ header .main .main-first li a {
 
 header .main .main-first > li > a:hover,
 header .main .main-first > li > a:active {
-    border-bottom:2px solid #0b97c4;
-
+    border-bottom: 2px solid #0b97c4;
     color: #ffb300;
     background-color: #f8f6f1;
 }
 
-
-header .main .main-first li ul{
+header .main .main-first li ul {
     display: none;
     position: absolute;
 }
@@ -327,15 +347,19 @@ header .main .main-first li:hover ul {
     display: block;
     /*如果为正数，则离用户更近，为负数则表示离用户更远*/
     z-index: 1000;
-    width:120px;
+    width: 120px;
     text-align: center;
 }
 
+
 /*确定这一块在不同分辨率之下发生了变化媒体查询，*/
+
 
 /*这里如果使用rem相对大小，则不是根据html的font-size=10px, 而是根据浏览器的默认字体大小16px*/
 
+
 /*同时复制这三块*/
+
 
 /*0-800*/
 
@@ -347,19 +371,15 @@ header .main .main-first li:hover ul {
         margin: 1.5rem auto 0.5rem;
         text-align: center;
     }
-
     header .main ul {
         text-align: center;
     }
-
     header .main ul li {
         border: none;
     }
-
     header .main ul li a {
         padding: 0 1.5rem;
     }
-
     header .main ul li a:hover,
     header .main ul li a:active {
         color: #ffb300;
@@ -367,27 +387,27 @@ header .main .main-first li:hover ul {
     }
 }
 
+
 /*481-800*/
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
     header .main ul li {
         line-height: 3rem;
     }
-
     header .main ul li:first-child {
         display: none;
     }
-
     header .main ul li a {
         font-weight: normal;
         padding: 0 0.5rem;
     }
 }
 
+
 /*0-481*/
 
-@media only screen and (max-width: 480px) {
-}
+@media only screen and (max-width: 480px) {}
+
 
 /*网站主要内容*/
 
@@ -395,6 +415,7 @@ header .main .main-first li:hover ul {
     width: 100%;
     min-height: 600px;
 }
+
 
 /*交易信息*/
 
@@ -444,11 +465,15 @@ header .main .main-first li:hover ul {
     color: #fff;
 }
 
+
 /*确定这一块在不同分辨率之下发生了变化媒体查询，*/
+
 
 /*这里如果使用rem相对大小，则不是根据html的font-size=10px, 而是根据浏览器的默认字体大小16px*/
 
+
 /*同时复制这三块*/
+
 
 /*0-800*/
 
@@ -456,11 +481,9 @@ header .main .main-first li:hover ul {
     .trana-data {
         padding: 1rem 0.5rem;
     }
-
     .trans-data span {
         font-size: 1.2rem;
     }
-
     .trans-data span .trans-money {
         font-size: 1.6rem;
         margin: 0;
@@ -469,16 +492,16 @@ header .main .main-first li:hover ul {
         box-shadow: none;
         background: transparent;
     }
-
     .trans-report a {
         font-size: 1.2rem;
     }
 }
 
+
 /*481-800*/
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {
-}
+@media only screen and (min-width: 481px) and (max-width: 800px) {}
+
 
 /*0-481*/
 
@@ -486,24 +509,25 @@ header .main .main-first li:hover ul {
     .transaction {
         padding: 0.5rem 0;
     }
-
     .trans-data,
     .trans-report {
         float: none;
         text-align: center;
     }
-
     .trans-data,
     .trans-report a {
         padding: 0;
     }
 }
 
+
 /*滚动广告部分*/
+
 
 /*.ad {
     display: none;
 }*/
+
 
 /*平台特点*/
 
@@ -529,6 +553,7 @@ header .main .main-first li:hover ul {
     margin-left: 1.5rem;
 }
 
+
 /*标题*/
 
 .feature .item h3 {
@@ -542,6 +567,7 @@ header .main .main-first li:hover ul {
     color: #f90;
 }
 
+
 /*内容*/
 
 .feature .item p {
@@ -551,6 +577,7 @@ header .main .main-first li:hover ul {
     padding: 0;
     color: #999;
 }
+
 
 /*最新公告样式*/
 
@@ -578,6 +605,7 @@ header .main .main-first li:hover ul {
     white-space: nowrap;
 }
 
+
 /*通过css的样式的方式来添加内容（before，after）*/
 
 .notice a:first-child:before {
@@ -599,6 +627,7 @@ header .main .main-first li:hover ul {
     margin-right: 2rem;
     color: #f90;
 }
+
 
 /*产品列表*/
 
@@ -708,6 +737,7 @@ header .main .main-first li:hover ul {
     width: calc(22% - 4.4rem);
 }
 
+
 /*NB*/
 
 .product .product-content .item .buy a {
@@ -733,6 +763,7 @@ header .main .main-first li:hover ul {
     background-color: #ccc !important;
     cursor: not-allowed;
 }
+
 
 /*底部导航的实现*/
 
@@ -775,6 +806,7 @@ header .main .main-first li:hover ul {
     line-height: 3rem;
 }
 
+
 /*网站底部*/
 
 footer {
@@ -790,6 +822,7 @@ footer ul {
 footer ul li {
     display: inline-block;
 }
+
 
 /*css雪碧图的使用*/
 
@@ -854,6 +887,7 @@ footer p {
     color: #999;
 }
 
+
 /*chart-analysis*/
 
 .chart-analysis {
@@ -864,7 +898,6 @@ footer p {
 .chart-analysis-main-left {
     width: 200px;
     background-color: orange;
-
 }
 
 .chart-analysis-main-right {
@@ -906,13 +939,13 @@ footer p {
     text-shadow: 10px 10px #558ABB;
 }
 
+
 /*css3h5 */
 
 .css3h5 {
     width: 100%;
-    height:100%;
+    height: 100%;
     /*display: -webkit-box;*/
-
 }
 
 .css3h5 > section {
@@ -935,18 +968,17 @@ footer p {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-
     transform-style: preserve-3d;
     animation: rotate-frame 30s linear infinite;
     transform-origin: 50% 50% 50px;
-/ / 设置3d空间的原点在平面中心再向Z轴移动200px的位置
+    / / 设置3d空间的原点在平面中心再向Z轴移动200px的位置
 }
 
 .css3h5-slide {
     /*width: 400px;*/
     /*height: 400px;*/
     position: absolute;
-/ / 定位
+    / / 定位
 }
 
 .css3h5-top {
@@ -972,7 +1004,6 @@ footer p {
     transform: rotateX(90deg);
     transform-origin: top;
     background: url("../images/bottom.jpg") center no-repeat;
-
 }
 
 .css3h5-bottom img {
@@ -988,13 +1019,11 @@ footer p {
     transform: rotateY(90deg);
     transform-origin: right;
     /*background: url("../images/left.jpg") no-repeat;*/
-
 }
 
 .css3h5-left img {
     width: 100%;
     height: 100%;
-
 }
 
 .css3h5-right {
@@ -1005,7 +1034,6 @@ footer p {
     transform: rotateY(-90deg);
     transform-origin: left;
     /*background: url("../images/right.jpg") center no-repeat;*/
-
 }
 
 .css3h5-right img {
@@ -1020,8 +1048,7 @@ footer p {
     top: 50px;
     transform: translateZ(100px);
     background: url("../images/front.jpg") center no-repeat;
-
-/ / 立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离
+    / / 立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离
 }
 
 .css3h5-front img {
@@ -1036,8 +1063,7 @@ footer p {
     top: 50px;
     transform: translateZ(0);
     background: url("../images/back.jpg") center no-repeat;
-
-/ / 立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离
+    / / 立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离
 }
 
 .css3h5-back img {
@@ -1096,44 +1122,36 @@ footer p {
 .css3h5-feature2 {
     /*display: table;*/
     /*width: 300px;*/
-
     width: 600px;
     height: 300px;
     padding: 10px;
     border: 1px solid #ccc;
     margin: 20px auto;
-
     color: red;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px red, -1em 0 0.4em olive;
     -moz-box-shadow: 3px 3px red, -1em 0 0.4em olive;
     box-shadow: 3px 3px red, -1em 0 0.4em olive;
-
     display: -webkit-box;
     -webkit-box-orient: horizontal;
     -webkit-box-pack: center;
     -webkit-box-align: center;
-
     display: -moz-box;
     -moz-box-orient: horizontal;
     -moz-box-pack: center;
     -moz-box-align: center;
-
     display: -o-box;
     -o-box-orient: horizontal;
     -o-box-pack: center;
     -o-box-align: center;
-
     display: -ms-box;
     -ms-box-orient: horizontal;
     -ms-box-pack: center;
     -ms-box-align: center;
-
     display: box;
     box-orient: horizontal;
     box-pack: center;
     box-align: center;
-
 }
 
 .css3h5-feature2 .css3h5-box-shadow {
@@ -1142,26 +1160,33 @@ footer p {
     /*position: relative;*/
     /*top:50%;*/
     /*transform:translateY(-50%);*/
-
     height: 250px;
     width: 80%;
-
     /*文字水平居中*/
     text-align: center;
-
     border: dashed 2px silver;
     border-radius: 10px 10px 10px;
-
     color: gray;
 }
 
-.css3h5-feature3, .css3h5-feature4, .css3h5-feature5, .css3h5-feature6, .css3h5-feature7, .css3h5-feature8, .css3h5-feature9, .css3h5-feature10, .css3h5-feature11, .css3h5-feature12, .css3h5-feature13, .css3h5-feature14 {
+.css3h5-feature3,
+.css3h5-feature4,
+.css3h5-feature5,
+.css3h5-feature6,
+.css3h5-feature7,
+.css3h5-feature8,
+.css3h5-feature9,
+.css3h5-feature10,
+.css3h5-feature11,
+.css3h5-feature12,
+.css3h5-feature13,
+.css3h5-feature14,
+.css3h5-feature15 {
     color: red;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px red, -1em 0 0.4em olive;
     -moz-box-shadow: 3px 3px red, -1em 0 0.4em olive;
     box-shadow: 3px 3px red, -1em 0 0.4em olive;
-
     width: 600px;
     height: 300px;
     padding: 10px;
@@ -1169,30 +1194,30 @@ footer p {
     margin: 20px auto;
 }
 
-.css3h5-feature7{
+.css3h5-feature7 {
     text-align: center;
 }
 
-.css3h5-feature7 h1{
+.css3h5-feature7 h1 {
     animation: bang 1s;
 }
 
 @keyframes bang {
-    0%{
+    0% {
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
         transform: scale(1);
     }
-    50%{
+    50% {
         -webkit-transform: scale(1.5);
         -moz-transform: scale(1.5);
         -ms-transform: scale(1.5);
         -o-transform: scale(1.5);
         transform: scale(1.5);
     }
-    100%{
+    100% {
         -webkit-transform: scale(0);
         -moz-transform: scale(0);
         -ms-transform: scale(0);
@@ -1201,90 +1226,164 @@ footer p {
     }
 }
 
-
-.css3h5-feature9{
+.css3h5-feature9 {
     background: url("../images/stone-art-bg.jpg");
     display: -webkit-box;
     -webkit-box-align: center;
     -webkit-box-pack: center;
 }
 
-.css3h5-feature9 .css3h5-hsla{
-    max-width:20em;
+.css3h5-feature9 .css3h5-hsla {
+    max-width: 20em;
     font: 100%/1.5 sans-serif;
-    padding:2em;
-    border:10px solid hsla(0, 0%, 100%, .5);
+    padding: 2em;
+    border: 10px solid hsla(0, 0%, 100%, .5);
     background: white;
     background-clip: padding-box;
 }
 
+.css3h5-feature15 {
+    font-size: 14px;
+    background: #111;
+    font-family: "Microsoft YaHei";
+}
+
+.css3h5-feature15 > h3 {
+    font-family: "papyrus";
+}
+
+.css3h5-feature15 ul {
+    width: 600px;
+    /*margin: 10px auto;*/
+    padding: 20px 0;
+}
+
+.css3h5-feature15 ul li {
+    margin-right: 10px;
+    float: left;
+    width: 140px;
+    height: 180px;
+}
+
+.css3h5-feature15 ul li:last-child {
+    margin-right: 0;
+}
+
+.css3h5-feature15 ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+}
+
+.css3h5-feature15 ul li a > div {
+    position: absolute;
+    left: 0;
+    height: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.css3h5-feature15 ul li a div:first-child {
+    background-color: rgb(255, 64, 129);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    z-index: 2;
+}
+
+.css3h5-feature15 ul li a div:last-child {
+    background: rgb(0, 188, 212);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.css3h5-feature15 ul li a:hover div:first-child {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+}
+
+.css3h5-feature15 ul li a:hover div:last-child {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+}
+
+.css3h5-feature15 ul li a div h3 {
+    margin: 0 auto 15px;
+    padding: 15px 0;
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px #fff dashed;
+}
+
+.css3h5-feature15 ul li a div p {
+    padding: 0 10px;
+    font-size: 12px;
+    text-indent: 2em;
+    line-height: 18px;
+    text-align: justify;
+}
+
+
 /*blog page*/
 
-
-.blog{
+.blog {
     display: -webkit-box;
     display: -moz-box;
     display: box;
 }
 
-.blog-left{
-    width:200px;
+.blog-left {
+    width: 200px;
     display: inline-block;
-    border:1px solid gray;
-
+    border: 1px solid gray;
 }
 
-.blog-left .blog-left-nav{
+.blog-left .blog-left-nav {}
 
-}
+.blog-left .blog-left-nav ul {}
 
+.blog-left .blog-left-nav ul li {}
 
-.blog-left .blog-left-nav ul{
+.blog-left .blog-left-nav ul li a {}
 
-}
-.blog-left .blog-left-nav ul li{
-
-}
-
-.blog-left .blog-left-nav ul li a{
-
-}
-
-.blog-main{
+.blog-main {
     /*注意inline-block和box-flex不能混用*/
     /*display: inline-block;*/
-    border:1px solid gray;
+    border: 1px solid gray;
     -webkit-box-flex: 4;
     -moz-box-flex: 4;
     box-flex: 4;
-
-
 }
 
-.blog-main .blog-article{
+.blog-main .blog-article {}
 
-}
+.blog-main .blog-article-title {}
 
-.blog-main .blog-article-title{
+.blog-main .blog-article p {}
 
-}
-
-.blog-main .blog-article p{
-
-}
-
-.blog-right{
+.blog-right {
     border: 1px solid gray;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     box-flex: 1;
-
 }
 
 
 /*user page */
-
-
 
 .cd-user-modal {
     position: fixed;
