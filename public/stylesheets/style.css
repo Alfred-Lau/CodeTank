@@ -1181,7 +1181,9 @@ footer p {
 .css3h5-feature12,
 .css3h5-feature13,
 .css3h5-feature14,
-.css3h5-feature15 {
+.css3h5-feature15,
+.css3h5-feature16,
+.css3h5-feature17 {
     color: red;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px red, -1em 0 0.4em olive;
@@ -1335,6 +1337,25 @@ footer p {
     text-indent: 2em;
     line-height: 18px;
     text-align: justify;
+}
+
+.css3h5-feature16 {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background: black;
+}
+
+.css3h5-feature16 #canvas {
+    height: 200px;
+    width: 200px;
+}
+
+.css3h5-feature17 {
+    background: #000;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
 }
 
 

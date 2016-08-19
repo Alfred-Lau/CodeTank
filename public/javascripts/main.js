@@ -2,7 +2,7 @@
  * Created by alfredlau on 2016/8/17.
  */
 
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
     var $form_modal = $('.cd-user-modal'),
         $form_login = $form_modal.find('#cd-login'),
         $form_signup = $form_modal.find('#cd-signup'),
@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
 
 
 //credits http://css-tricks.com/snippets/jquery/move-cursor-to-end-of-textarea-or-input/
-jQuery.fn.putCursorAtEnd = function() {
+$.fn.putCursorAtEnd = function() {
     return this.each(function() {
         // If this function exists...
         if (this.setSelectionRange) {
