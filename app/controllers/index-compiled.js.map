@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":[],"mappings":";;AAAA,QAAQ,KAAR,GAAgB,UAAS,GAAT,EAAc,GAAd,EAAmB,IAAnB,EAAyB;AACrC,QAAI,MAAJ,CAAW,OAAX,EAAoB,EAAE,OAAO,WAAT,EAApB;AACH,CAFD","file":"index-compiled.js","sourcesContent":["exports.index = function(req, res, next) {\n    res.render('index', { title: 'Code Tank' });\n}\n"]}
