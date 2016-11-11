@@ -11,7 +11,7 @@ $(() => {
 
     $.ajax({
         data: params,
-        url: 'http://localhost:3000/data',
+        url: 'http://localhost:3030/data',
         type: 'get',
         dataType: 'json',
         cache: false,

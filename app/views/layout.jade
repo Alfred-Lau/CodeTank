@@ -7,7 +7,7 @@ html
 		link(rel='stylesheet', href='/vendor/owlcarousel/assets/owl.carousel.min.css')
 		link(rel='stylesheet', href='/vendor/owlcarousel/assets/owl.theme.default.min.css')
 		script(src="/javascripts/jquery-3.1.0.js")
-		script(src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous")
+		script(src="/javascripts/jquery-1.12.4.min.js")
 		script(src="/vendor/owlcarousel/owl.carousel.min.js")
 		script(src="/javascripts/main.js")
 	body
@@ -57,18 +57,6 @@ html
 								a(href="*") 关于我
 		div.container
 			block content
-		div.cd-user-modal
-			div.cd-user-modal-container
-				ul.cd-switcher
-					li
-						a(href="#0") 用户登录
-					li
-						a(href="#0") 新用户注册
-				div#cd-login
-					form.cd-form
-						p.fieldset
-							label.image-replace.cd-username(for="signin-username")
-							input.full-width.has-pedding.has-border#signin-username(type="text", placeholder="输入用户名")
 		footer
 			ul
 				li
